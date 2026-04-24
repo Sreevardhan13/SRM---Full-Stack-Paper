@@ -108,6 +108,5 @@ if (require.main === module) {
 }
 
 module.exports = {
-  processData,
   server,
 };
