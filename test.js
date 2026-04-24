@@ -1,5 +1,5 @@
 const assert = require("assert");
-const { processData } = require("./server");
+const { processData } = require("./lib/processor");
 
 const response = processData([
   "A->B",
