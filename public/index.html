@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SRM BFHL Hierarchy API</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="input-panel">
+        <div class="title-row">
+          <div>
+            <p class="eyebrow">POST /bfhl</p>
+            <h1>Hierarchy Processor</h1>
+          </div>
+          <button id="sampleButton" class="ghost-button" type="button">Load sample</button>
+        </div>
+
+        <label for="nodeInput">Node list</label>
+        <textarea id="nodeInput" spellcheck="false">A-&gt;B, A-&gt;C, B-&gt;D, C-&gt;E, E-&gt;F
+X-&gt;Y, Y-&gt;Z, Z-&gt;X
+P-&gt;Q, Q-&gt;R
+G-&gt;H, G-&gt;H, G-&gt;I
+hello, 1-&gt;2, A-&gt;</textarea>
+
+        <div class="action-row">
+          <button id="submitButton" type="button">Submit</button>
+          <p id="statusText" class="status-text">Ready</p>
+        </div>
+      </section>
+
+      <section class="results-panel">
+        <div class="summary-grid" id="summaryGrid"></div>
+        <div id="hierarchyList" class="hierarchy-list"></div>
+        <div class="raw-panel">
+          <div class="panel-header">
+            <h2>Raw Response</h2>
+          </div>
+          <pre id="rawResponse">{}</pre>
+        </div>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
