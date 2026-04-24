@@ -2,7 +2,6 @@
   "name": "srm-bfhl-full-stack",
   "version": "1.0.0",
   "description": "SRM Full Stack Engineering Challenge REST API and frontend",
-  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js",
